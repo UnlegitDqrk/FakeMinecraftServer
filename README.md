@@ -1,6 +1,6 @@
 # FakeMinecraftServer
 
-Run a fake Minecraftserver.
+Run a fake Minecraftserver.\n
 ChatConverter by md_5: Copyright (c) 2012, md_5. All rights reserved.
 
 **Features**:
