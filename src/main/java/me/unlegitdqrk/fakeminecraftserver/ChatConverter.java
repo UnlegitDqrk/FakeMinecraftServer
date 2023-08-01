@@ -38,10 +38,6 @@ import java.util.*;
 import java.util.regex.Matcher;
 import java.util.regex.Pattern;
 
-/**
- * @author UnlegitDqrk
- */
-
 public class ChatConverter {
     private static final char COLOR_CHAR = '\u00A7';
     private static final Pattern url = Pattern.compile("^(?:(https?)://)?([-\\w_\\.]{2,}\\.[a-z]{2,4})(/\\S*)?$");
