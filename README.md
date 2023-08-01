@@ -12,7 +12,7 @@
 - Maxplayers<br />
 - Set protocoltext<br />
 - Set protocolversion<br />
-- Switch engine (engine/json)<br />
+- Switch engine (classic/json) (default: classic)<br />
 - Change the port (default: 25565)<br />
 
 <h3>Planned<h5 />
