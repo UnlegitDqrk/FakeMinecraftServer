@@ -48,12 +48,15 @@ public class BasePacketHandler extends ChannelInboundHandlerAdapter {
 
             MojewOutputStream outputStream = new MojewOutputStream(Unpooled.buffer());
             MojewOutputStream dataOutputStream = new MojewOutputStream(Unpooled.buffer());
+
             dataOutputStream.writeInt(0);
             dataOutputStream.writeUTF(response);
             dataOutputStream.close();
+
             outputStream.writeInt(dataOutputStream.writtenBytes());
             outputStream.write(dataOutputStream.getData());
             outputStream.close();
+
             ctx.writeAndFlush(outputStream.buffer());
         } else if (id == 1) {
             // ping request
@@ -63,12 +66,15 @@ public class BasePacketHandler extends ChannelInboundHandlerAdapter {
             // ping response
             MojewOutputStream outputStream = new MojewOutputStream(Unpooled.buffer());
             MojewOutputStream dataOutputStream = new MojewOutputStream(Unpooled.buffer());
+
             dataOutputStream.writeInt(1);
             dataOutputStream.writeLong(time);
             dataOutputStream.close();
+
             outputStream.writeInt(dataOutputStream.writtenBytes());
             outputStream.write(dataOutputStream.getData());
             outputStream.close();
+
             ctx.writeAndFlush(outputStream.buffer());
         } else if (id == 2) {
             // TODO: Fixing kick message
@@ -79,12 +85,15 @@ public class BasePacketHandler extends ChannelInboundHandlerAdapter {
             // login response
             MojewOutputStream outputStream = new MojewOutputStream(Unpooled.buffer());
             MojewOutputStream dataOutputStream = new MojewOutputStream(Unpooled.buffer());
+
             dataOutputStream.writeInt(2);
             dataOutputStream.writeUTF("{text:"+ ChatConverter.replaceColors(FakeMinecraftServer.KICK_MESSAGE) +", color: white}");
             dataOutputStream.close();
+
             outputStream.writeInt(dataOutputStream.writtenBytes());
             outputStream.write(dataOutputStream.getData());
             outputStream.close();
+
             ctx.writeAndFlush(outputStream.buffer());
         }
     }
