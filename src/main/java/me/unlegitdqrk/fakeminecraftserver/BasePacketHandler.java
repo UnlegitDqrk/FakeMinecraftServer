@@ -87,7 +87,7 @@ public class BasePacketHandler extends ChannelInboundHandlerAdapter {
             MojewOutputStream dataOutputStream = new MojewOutputStream(Unpooled.buffer());
 
             dataOutputStream.writeInt(2);
-            dataOutputStream.writeUTF("{text:\""+ ChatConverter.replaceColors(FakeMinecraftServer.KICK_MESSAGE) + "\", color: white}");
+            dataOutputStream.writeUTF("{text:\""+ ChatConverter.replaceColors(FakeMinecraftServer.KICK_MESSAGE).replace("\\n", "\n") + "\", color: white}");
             dataOutputStream.close();
 
             outputStream.writeInt(dataOutputStream.writtenBytes());
