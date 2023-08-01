@@ -18,4 +18,3 @@
 <h3>Planned<h5 />
 - Kick message, when player is trying to join
 </html>
-d
