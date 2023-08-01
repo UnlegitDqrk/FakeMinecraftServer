@@ -2,7 +2,7 @@
 
 Run a fake Minecraftserver.
 
-**Features**
+**Features**:
 Colorable motd
 Colorable samples
 Servericon
@@ -13,5 +13,5 @@ Set protocolversion
 Switch engine (engine/json)
 Change the port (default: 25565)
 
-**Planned**
+**Planned**:
 Kick message, when player is trying to join
