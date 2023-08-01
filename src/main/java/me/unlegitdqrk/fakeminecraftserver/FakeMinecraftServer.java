@@ -36,6 +36,7 @@ public class FakeMinecraftServer {
     public static final File SERVER_ICON = new File("server-icon.png");
 
     public static void start() throws Exception {
+        System.out.println("ChatConverter class by md_5: Copyright (c) 2012, md_5. All rights reserved.");
         String serverIconAsString = null;
 
         if (SERVER_ICON.exists()) {
