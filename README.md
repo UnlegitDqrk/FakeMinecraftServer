@@ -7,6 +7,7 @@
 <h3>Features<h5 />
 - Colorable motd<br />
 - Colorable samples<br />
+- Colorable kickmessage<br />
 - Servericon<br />
 - "Online-"players<br />
 - Maxplayers<br />
@@ -16,5 +17,4 @@
 - Change the port (default: 25565)<br />
 
 <h3>Planned<h5 />
-- Kick message, when player is trying to join
 </html>
