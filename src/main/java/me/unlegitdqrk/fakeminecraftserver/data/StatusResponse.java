@@ -13,9 +13,9 @@ import java.util.UUID;
  */
 
 public class StatusResponse {
-    Version version;
-    Players players;
-    Message description;
+    private Version version;
+    private Players players;
+    private Message description;
 
     public String favicon;
 
@@ -27,8 +27,8 @@ public class StatusResponse {
     }
 
     public class Version {
-        String name;
-        int protocol;
+        private String name;
+        private int protocol;
 
         public Version(String name, int protocol) {
             this.name = name;
@@ -36,12 +36,12 @@ public class StatusResponse {
         }
     }
 
-    class Players {
-        int max;
-        int online;
-        List<Sample> sample;
+    public class Players {
+        private int max;
+        private int online;
+        private List<Sample> sample;
 
-        Players(int max, int online) {
+        public Players(int max, int online) {
             this.max = max;
             this.online = online;
             this.sample = new ArrayList<>();
@@ -51,11 +51,11 @@ public class StatusResponse {
             }
         }
 
-        class Sample {
-            String name;
-            String id;
+        public class Sample {
+            private String name;
+            private String id;
 
-            Sample(String name) {
+            public Sample(String name) {
                 this.name = name;
                 this.id = UUID.randomUUID().toString();
             }
