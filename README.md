@@ -2,7 +2,8 @@
 <h1>FakeMinecraftServer</h1>
 
 **Run a fake Minecraftserver.**<br />
-**ChatConverter by md_5: Copyright (c) 2012, md_5. All rights reserved.**
+**ChatConverter by md_5: Copyright (c) 2012, md_5. All rights reserved.**<br />
+**ByteBufUtils class by Spout LLC: Copyright (c) 2013 Spout LLC <http://www.spout.org/>**
 <br />
 <h3>Features<h5 />
 - Colorable motd<br />
