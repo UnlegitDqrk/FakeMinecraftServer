@@ -1,10 +1,12 @@
 package me.unlegitdqrk.fakeminecraftserver.data;
 
 import me.unlegitdqrk.fakeminecraftserver.ChatConverter;
-import me.unlegitdqrk.fakeminecraftserver.FakeMinecraftServer;
 import me.unlegitdqrk.fakeminecraftserver.Message;
+import me.unlegitdqrk.fakeminecraftserver.Settings;
 
-import java.util.*;
+import java.util.ArrayList;
+import java.util.List;
+import java.util.UUID;
 
 /**
  * @author UnlegitDqrk
@@ -44,7 +46,7 @@ public class StatusResponse {
             this.online = online;
             this.sample = new ArrayList<>();
 
-            for (String sample : FakeMinecraftServer.SAMPLES) {
+            for (String sample : Settings.SAMPLES) {
                 this.sample.add(new Sample(ChatConverter.replaceColors(sample)));
             }
         }
