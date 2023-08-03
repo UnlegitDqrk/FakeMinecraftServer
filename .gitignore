@@ -1,4 +1,4 @@
-target/
+target/d
 !.mvn/wrapper/maven-wrapper.jar
 !**/src/main/**/target/
 !**/src/test/**/target/
