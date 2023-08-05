@@ -7,6 +7,7 @@
 
 package me.unlegitdqrk.fakeminecraftserver;
 
+import java.io.File;
 import java.util.Arrays;
 import java.util.List;
 
@@ -28,5 +29,7 @@ public class Settings {
 
     public static final String KICK_MESSAGE = "&4Just a Fakeserver!\n&aDeveloped by UnlegitDqrk";
     public static final List<String> SAMPLES = Arrays.asList("&4Fakeserver", "&5by", "&aUnlegitDqrk");
+
+    public static final File SERVER_ICON = new File("server-icon.png");
 
 }
