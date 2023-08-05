@@ -30,7 +30,7 @@ public class FakeMinecraftServer {
     private static boolean stopping = false;
     private static ServerSocket server;
 
-    public static void start() throws Exception {
+    public static void start() throws IOException {
         System.out.println("Starting server...");
         printCredits();
 
